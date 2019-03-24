@@ -1,0 +1,12 @@
+[Unit]
+Description = DarkenBG
+
+[Service]
+Environment="DISPLAY=:0"
+Environment="XAUTHORITY=/home/pawn/.Xauthority"
+ExecStart=/usr/bin/python /home/pawn/src/py/DarkenBG/test.py
+Restart=always
+Type=simple
+
+[Install]
+WantedBy=graphical.target
